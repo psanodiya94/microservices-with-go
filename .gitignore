@@ -23,3 +23,58 @@ go.work.sum
 
 # env file
 .env
+
+# project
+*App
+*db-data
+
+# Docker related files
+.Docker
+.DockerFile
+.dockerignore
+
+# Docker image caches
+./docker/images/*
+
+# Docker volumes
+./docker/volumes/*
+
+# Docker compose project specific files
+./docker/compose/.env
+
+# Docker build artifacts
+*.tar
+
+# Generated files by Docker
+*.qcow2
+*.vmdk
+*.vdi
+*.ova
+
+# Docker network configurations
+./docker/networks/*
+
+# If you use docker-sync or other Docker development tools
+./docker-sync.yml
+
+# Docker cache directories
+./docker/cache/*
+
+# If you have local docker-compose override files
+docker-compose.override.yml
+
+# Ignore credentials and certificates
+docker/certs/*
+docker/auth.json
+
+# Ignore logs
+*.log
+
+# Ignore application-specific Docker configuration files
+docker/config.json
+
+# Ignore Docker Desktop settings if applicable
+.docker
+
+# Ignore Docker Swarm secrets
+docker/secrets/*
